@@ -91,6 +91,7 @@
             this.DiscountPercentTextBox.ReadOnly = true;
             this.DiscountPercentTextBox.Size = new System.Drawing.Size(100, 20);
             this.DiscountPercentTextBox.TabIndex = 5;
+            this.DiscountPercentTextBox.Text = "10%";
             this.DiscountPercentTextBox.TextChanged += new System.EventHandler(this.discountPercentTextBox_TextChanged);
             // 
             // DiscountAmountTextBox
@@ -129,12 +130,13 @@
             this.ExitButton.TabIndex = 9;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // Invoicetotalform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(225, 173);
+            this.ClientSize = new System.Drawing.Size(226, 173);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.TotalTextBox);
@@ -146,6 +148,7 @@
             this.Controls.Add(this.DiscountPercentLabel);
             this.Controls.Add(this.SubTotalLabel);
             this.Name = "Invoicetotalform";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Invoice Total";
             this.Load += new System.EventHandler(this.Invoicetotalform_Load);
             this.ResumeLayout(false);
